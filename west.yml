@@ -8,6 +8,8 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
+    - name: efra-mx
+      url-base: https://github.com/efra-mx 
 
   projects:
     - name: zephyr
@@ -27,6 +29,12 @@ manifest:
           - mcumgr
           - mcuboot
           - lz4
+    - name: zephyr-ceedling
+      revision: main
+      remote: efra-mx
+      repo-path: zephyr-ceedling
+      path: test/zephyr-ceedling
+      import: true
 
 self:
   path: tlamantli
