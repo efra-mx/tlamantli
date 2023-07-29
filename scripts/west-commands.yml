@@ -1,0 +1,6 @@
+west-commands:
+  - file: scripts/example_west_command.py
+    commands:
+      - name: tlamanti-west-command
+        class: tlamantiWestCommand
+        help: a tlamanti west extension command
